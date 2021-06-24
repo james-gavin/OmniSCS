@@ -1,0 +1,4 @@
+name: ${project.name}
+authors: [James Gavin]
+version: ${project.version}-${git.commit.id.abbrev}
+main: ${project.groupId}.${project.artifactId}
