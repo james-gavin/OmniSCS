@@ -47,6 +47,8 @@ public class OmniSCS extends JavaPlugin {
         getCommand("vanish").setExecutor(new VanishCommand());
         getCommand("mod").setExecutor(new ModCommand());
         getCommand("reports").setExecutor(new ReportsCommand());
+        getCommand("invsee").setExecutor(new InvseeCommand());
+
     }
 
     public LuckPerms getApi() {

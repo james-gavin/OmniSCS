@@ -9,7 +9,14 @@ commands:
       - panic
   mod:
     description: Enable or disable mod mode
+    aliases:
+      - staff
+      - h
   vanish:
     description: Enable or disable vanish
+    aliases:
+      - v
   reports:
     description: View active and inactive reports
+  invsee:
+    description: View inside a players inventory

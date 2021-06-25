@@ -67,7 +67,7 @@ public class StaffMode {
     }
 
     public void giveItems() {
-        player.getInventory().setItem(0, ItemBuilder.of(Material.COMPASS).name("&eBoost").build());
+        player.getInventory().setItem(0, ItemBuilder.of(Material.COMPASS).build());
         player.getInventory().setItem(1, ItemBuilder.of(Material.WATCH).name("&eRandom Teleport").build());
         player.getInventory().setItem(2, ItemBuilder.of(Material.SKULL_ITEM).name("&eOnline Staff").build());
         player.getInventory().setItem(4, ItemBuilder.of(Material.DIAMOND_SWORD).name("&ePunish").build());
@@ -92,6 +92,8 @@ public class StaffMode {
                 online.hidePlayer(player);
             }
         }
+
+        player.sendMessage(CC.translate("&7[&cS&7] &7You have vanished."));
     }
 
     public void unvanish() {
@@ -99,6 +101,8 @@ public class StaffMode {
         for (Player online : Bukkit.getServer().getOnlinePlayers()) {
             online.showPlayer(player);
         }
+
+        player.sendMessage(CC.translate("&7[&cS&7] &7You have unvanished."));
     }
 
     public void openOnlineStaff(Player player) {
@@ -145,7 +149,8 @@ public class StaffMode {
                             User user = OmniSCS.getInstance().getApi().getUserManager().getUser(staffPlayer.getUniqueId());
 
                             if (user == null) {
-                                return List.of("null");
+                                toReturn.add("null");
+                                return toReturn;
                             }
 
                             toReturn.add(CC.translate("&7&m--------------------------"));

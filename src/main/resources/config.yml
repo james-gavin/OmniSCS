@@ -1,3 +1,3 @@
-mysqlurl: jdbc:mysql://127.0.0.1:3306/hcf?characterEncoding=latin1&useConfigs=maxPerformance
-mysqluser: root
-mysqlpassword: 'pkAx32rRFFgs'
+mysqlurl: jdbc:mysql://panel.omnipvp.net:3306/s6_staffcore?characterEncoding=latin1&useConfigs=maxPerformance
+mysqluser: u6_Il3EHxeBNY
+mysqlpassword: 'vnPbJs8rGg7r^91rm!IAAWab'

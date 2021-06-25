@@ -13,6 +13,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.ClickType;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -56,7 +57,9 @@ public class ReportsCommand implements CommandExecutor {
 
                     @Override
                     public List<String> getDescription(Player player) {
-                        return List.of(CC.translate("&7&oView active reports..."));
+                        List<String> desc = new ArrayList<>();
+                        desc.add(CC.translate("&7&oView active reports..."));
+                        return desc;
                     }
 
                     @Override
@@ -79,7 +82,9 @@ public class ReportsCommand implements CommandExecutor {
 
                     @Override
                     public List<String> getDescription(Player player) {
-                        return List.of(CC.translate("&7&oView inactive reports..."));
+                        List<String> desc = new ArrayList<>();
+                        desc.add(CC.translate("&7&oView inactive reports..."));
+                        return desc;
                     }
 
                     @Override
