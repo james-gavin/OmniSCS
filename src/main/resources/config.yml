@@ -1,0 +1,3 @@
+mysqlurl: jdbc:mysql://127.0.0.1:3306/hcf?characterEncoding=latin1&useConfigs=maxPerformance
+mysqluser: root
+mysqlpassword: 'pkAx32rRFFgs'

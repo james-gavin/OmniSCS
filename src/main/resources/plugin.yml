@@ -2,3 +2,14 @@ name: ${project.name}
 authors: [James Gavin]
 version: ${project.version}-${git.commit.id.abbrev}
 main: ${project.groupId}.${project.artifactId}
+commands:
+  freeze:
+    description: Freeze another player
+    aliases:
+      - panic
+  mod:
+    description: Enable or disable mod mode
+  vanish:
+    description: Enable or disable vanish
+  reports:
+    description: View active and inactive reports
